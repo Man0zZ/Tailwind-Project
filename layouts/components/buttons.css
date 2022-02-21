@@ -1,0 +1,65 @@
+nav li:hover {
+  box-shadow: 0px 0px 4px #67777d;
+}
+nav li:focus {
+  box-shadow: 0px 0px 14px #30aaed;
+}
+.btn {
+  box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.25);
+}
+.btn:hover {
+  box-shadow: 0px 0px 14px #67777d;
+}
+.btn:focus {
+  box-shadow: 0px 0px 14px #30aaed;
+}
+.btn:active {
+  box-shadow: none;
+}
+.btn-secondary:focus {
+  background-color: #0da096;
+}
+.btn-primary:focus {
+  background-color: #0d7ed5;
+}
+.table__btn--active {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+.table__btn:hover {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+  border: 1px solid #0d7ed5;
+  z-index: 1;
+  color: #fff;
+}
+.table__btn--active:active {
+  box-shadow: none;
+}
+.table__btn:active {
+  box-shadow: none;
+}
+.dropdown.active .arrow {
+  transform: rotate(-180deg);
+}
+.dropdown.active .arrow-profile {
+  transform: rotate(-180deg);
+}
+.active .dropdown__content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(10px);
+  transition: 0.3s;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.active .profile__content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(200px);
+  transition: 0.3s;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.filter__btn:focus {
+  border: 1px solid #30aaed;
+  box-shadow: 0px 0px 7px #30aaed;
+}

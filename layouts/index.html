@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./components/fonts.css">
+    <link rel="stylesheet" href="./components/buttons.css">
+    <link rel="stylesheet" href="./components/table.css">
+    <link rel="stylesheet" href="./components/animation.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <script defer src="./js/script.js"></script>
+
+    <title>UAHEL Grievances System</title>
+</head>
+
+<body class="flex font-[Mukta,sans-serif] antialiased leading-normal bg-[#fdfdfd]">
+    <!-- Sidebar for Mobile -->
+    <div class="sidenav__menu fixed left-0 top-0 h-full w-full flex flex-shrink-0 flex-col items-center xl:hidden z-20">
+        <div class="mt-5">
+            <h1 class="text-[#07BAB7] text-4xl leading-none font-semibold">UAHEL</h1>
+            <p class="text-[#07BAB7] text-[0.8rem] mb-7">Grievances System</p>
+        </div>
+        <ul class="nav__list">
+            <li
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
+                <i class="ri-dashboard-line"></i>
+                <a href="index.html">Dashboard</a>
+            </li>
+            <li
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
+                <i class="ri-file-user-line"></i>
+                <a href="#">Public enquires</a>
+            </li>
+            <li
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
+                <i class="ri-feedback-line"></i>
+                <a href="#">Grievances List</a>
+            </li>
+            <li
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
+                <i class="ri-file-add-line"></i>
+                <a href="#">Add new grievance</a>
+            </li>
+            <li
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
+                <i class="ri-feedback-line"></i>
+                <a href="#">Information List</a>
+            </li>
+            <li
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
+                <i class="ri-file-add-line"></i>
+                <a href="#">Add new information</a>
+            </li>
+            <li
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
+                <i class="ri-file-chart-line"></i>
+                <a href="#">Create report</a>
+            </li>
+            <li
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
+                <i class="ri-file-download-line"></i>
+                <a href="#">Export data</a>
+            </li>
+            <li
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
+                <i class="ri-parent-line"></i>
+                <a href="#">Manage users</a>
+            </li>
+            <li
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
+                <i class="ri-settings-3-line"></i>
+                <a href="#">Settings</a>
+            </li>
+            <li
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
+                <i class="ri-logout-box-r-line"></i>
+                <a href="#">Logout</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="bg-[#F2FBFF] flex-shrink-0 xl:block hidden">
+        <div class="text-center my-7">
+            <h1 class="text-[#07BAB7] text-4xl leading-none font-semibold">UAHEL</h1>
+            <p class="text-[#07BAB7] text-[0.8rem] mb-20">Grievances System</p>
+        </div>
+        <nav class="h-[495px]">
+            <ul class="border-b-2">
+                <li
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
+                    <i class="ri-dashboard-line"></i>
+                    <a href="index.html">Dashboard</a>
+                </li>
+                <li
+                    class="mx-2 py-3 px-8 flex gap-2 items-center rounded-md bg-[#07BAB7] text-white hover:bg-[#0DA096] active:bg-[#0DA096] active:shadow-none">
+                    <i class="ri-file-user-line"></i>
+                    <a href="#">Public enquires</a>
+                </li>
+                <li
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
+                    <i class="ri-feedback-line"></i>
+                    <a href="#">Grievances List</a>
+                </li>
+                <li
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
+                    <i class="ri-file-add-line"></i>
+                    <a href="#">Add new grievance</a>
+                </li>
+                <li
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
+                    <i class="ri-feedback-line"></i>
+                    <a href="#">Information List</a>
+                </li>
+                <li
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
+                    <i class="ri-file-add-line"></i>
+                    <a href="#">Add new information</a>
+                </li>
+                <li
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
+                    <i class="ri-file-chart-line"></i>
+                    <a href="#">Create report</a>
+                </li>
+                <li
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
+                    <i class="ri-file-download-line"></i>
+                    <a href="#">Export data</a>
+                </li>
+            </ul>
+            <ul>
+                <li
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
+                    <i class="ri-parent-line"></i>
+                    <a href="#">Manage users</a>
+                </li>
+                <li
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
+                    <i class="ri-settings-3-line"></i>
+                    <a href="#">Settings</a>
+                </li>
+                <li
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
+                    <i class="ri-logout-box-r-line"></i>
+                    <a href="#">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="flex flex-col w-full">
+        <!-- Header -->
+        <header
+            class="h-20 border-b-[0.4px] border-gray-200 flex justify-end items-center px-4 md:px-14 lg:px-10 relative">
+            <div class="absolute left-0 pl-[0.8rem] md:pl-[3.3rem] text-[#42a5ff] cursor-pointer xl:hidden z-50">
+                <div class="burger">
+                    <div class="line1 bg-[#07BAB7] duration-500 m-1 h-1 w-[30px] "></div>
+                    <div class="line2 bg-[#07BAB7] duration-500 m-1 h-1 w-[30px] "></div>
+                    <div class="line3 bg-[#07BAB7] duration-500 m-1 h-1 w-[30px] "></div>
+                </div>
+            </div>
+
+            <div class="m-auto block xl:hidden pl-7">
+                <h1 class="text-[#07BAB7] text-4xl leading-none font-semibold">UAHEL</h1>
+                <p class="text-[#07BAB7] text-[0.8rem]">Grievances System</p>
+            </div>
+
+            <div class="hidden md:block">
+                <div class="flex items-center gap-4">
+                    <a class="text-[#30AAED] border-r-2 border-gray-100 pt-1 pr-4 hover:text-[#0D7ED5]"
+                        href="#">नेपालीमा
+                        हेर्नुहोस</a>
+                    <i class="ri-notification-3-line text-[#87979D] hover:text-[#30AAED]"></i>
+                    <div data-dropdown class="dropdown flex items-center gap-1 relative">
+                        <button data-dropdown-button
+                            class="dropbtn text-[#87979D] hover:text-[#30AAED] flex justify-center items-center gap-1 mt-1"><i data-dropdown-button
+                                class="dropbtn ri-user-line mb-1"></i>Prawesh<i data-dropdown-button
+                                class="dropbtn ri-arrow-down-s-fill arrow duration-300"></i></button>
+                        <div
+                            class="dropdown__content w-36 absolute top-12 right-0 z-10 bg-white text-[#3B484C] duration-300 opacity-0 invisible">
+                            <a class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"
+                                href="#"><i class="ri-edit-line"></i>Edit</a>
+                            <a class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]" href="#"><i
+                                    class="ri-logout-box-r-line"></i>Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- For mobile -->
+            <div data-dropdown class="dropdown md:hidden block">
+                <button data-dropdown-button class="dropbtn flex"><i data-dropdown-button
+                        class="dropbtn ri-settings-3-line arrow-profile duration-300 text-3xl text-[#2A3539]"></i></button>
+                <div
+                    class="profile__content w-40 absolute top-16 right-56 z-20 bg-white text-[#3B484C] duration-300 opacity-0 invisible">
+                    <ul>
+                        <li
+                            class="py-2 px-3 flex items-center gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                            <i class="dropbtn ri-user-line mb-1"></i><span>Prawesh</span>
+                        </li>
+                        <li
+                            class="py-2 px-3 flex items-center gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                            <i class="ri-edit-line"></i><a href="#">Edit</a>
+                        </li>
+                        <li
+                            class="py-2 px-3 flex items-center gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                            <i class="ri-eye-line"></i><a href="#">नेपालीमा
+                                हेर्नुहोस</a>
+                        </li>
+                        <li class="py-2 px-3 flex items-center gap-2 hover:bg-[#F2FBFF]"><i
+                                class="ri-logout-box-r-line"></i><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <!-- Search -->
+        <section class="w-full md:max-w-[1400px] m-auto">
+            <div class="flex justify-between flex-wrap md:flex-nowrap md: gap-5 mt-7 px-4 md:px-14">
+                <div class="w-full">
+                    <h2 class="mb-4 md:mb-8 font-bold text-2xl tracking-wider text-[#2A3539]">Grievances</h2>
+                    <div class="relative">
+                        <i class="ri-search-2-line text-[#87979D] absolute left-5 top-[7px] z-10"></i>
+                        <input
+                            class="input w-full h-10 py-2 px-12 outline-none rounded-[5px] border border-[#A8B7BD] hover:border-[#30AAED] focus:ring-[#30AAED]"
+                            placeholder="Search by grievance title and code" type="text">
+                        <i
+                            class="ri-close-line close text-[#87979D] text-2xl absolute right-4 top-1 z-10 hover:text-[#30AAED]"></i>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row md:flex-col">
+                    <Button
+                        class="btn btn-secondary w-[170px] md:w-[164px] h-10 mb-6 mr-4 md:mr-0 bg-[#07BAB7] text-white text-sm flex justify-center items-center gap-2 rounded-[5px] hover:bg-[#0DA096]">
+                        <i class="ri-add-line text-base"></i>
+                        Add new grievance</Button>
+                    <Button
+                        class="btn btn-primary w-[170px] md:w-[164px] h-10 bg-[#30AAED] text-white text-sm flex justify-center items-center gap-2 rounded-[5px] hover:bg-[#0D7ED5]">
+                        <i class="ri-filter-3-line text-base"></i>
+                        Filters</Button>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="px-4 md:px-14">
+                <div class="filter__content border border-[#A8B7BD] mt-4  pt-6 px-4 inline-block w-full">
+                    <div class="grid  sm:grid-cols-2 lg:grid-cols-4 gap-3 text-[#87979D]">
+                        <div class="dropdown relative" data-dropdown>
+                            <button data-dropdown-button
+                                class="filter__btn border border-[#A8B7BD] rounded-[5px] hover:border-[#30AAED] text-sm py-[10px] px-5 w-full text-left">
+                                Resolution status
+                                <i data-dropdown-button
+                                    class="dropbtn ri-arrow-down-s-fill arrow text-lg absolute top-2 right-4 duration-300"></i>
+                            </button>
+                            <div
+                                class="dropdown__content w-full absolute top-8 right-0 z-10 bg-white text-[#3B484C] duration-300 opacity-0 invisible">
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">In Progress</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Resolved</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Unresolved</a>
+                            </div>
+
+                        </div>
+                        <div class="dropdown relative" data-dropdown>
+                            <button data-dropdown-button
+                                class="filter__btn border border-[#A8B7BD] rounded-[5px] hover:border-[#30AAED] text-sm py-[10px] px-5 w-full text-left">
+                                Type of grievance
+                                <i data-dropdown-button
+                                    class="dropbtn ri-arrow-down-s-fill arrow text-lg absolute top-2 right-4 duration-300"></i>
+                            </button>
+                            <div
+                                class="dropdown__content w-full absolute top-8 right-0 z-10 bg-white text-[#3B484C] duration-300 opacity-0 invisible">
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">Environmental</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">GBV</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Labour</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Social</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Technical</a>
+                            </div>
+                        </div>
+                        <div class="dropdown relative" data-dropdown>
+                            <button data-dropdown-button
+                                class="filter__btn border border-[#A8B7BD] rounded-[5px] hover:border-[#30AAED] text-sm py-[10px] px-5 w-full text-left">
+                                Due date
+                                <i
+                                    class="dropbtn ri-arrow-down-s-fill arrow text-lg absolute top-2 right-4 duration-300"></i>
+                            </button>
+                        </div>
+                        <div class="dropdown relative" data-dropdown>
+                            <button data-dropdown-button
+                                class="filter__btn border border-[#A8B7BD] rounded-[5px] hover:border-[#30AAED] text-sm py-[10px] px-5 w-full text-left">
+                                Reg. date
+                                <i
+                                    class="dropbtn ri-arrow-down-s-fill arrow text-lg absolute top-2 right-4 duration-300"></i>
+                            </button>
+                        </div>
+                        <div class="dropdown relative" data-dropdown>
+                            <button data-dropdown-button
+                                class="filter__btn border border-[#A8B7BD] rounded-[5px] hover:border-[#30AAED] text-sm py-[10px] px-5 w-full text-left">
+                                Priority
+                                <i data-dropdown-button
+                                    class="dropbtn ri-arrow-down-s-fill arrow text-lg absolute top-2 right-4 duration-300"></i>
+                            </button>
+                            <div
+                                class="dropdown__content w-full absolute top-8 right-0 z-10 bg-white text-[#3B484C] duration-300 opacity-0 invisible">
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">High
+                                    Priority</a>
+                            </div>
+                        </div>
+                        <div class="dropdown relative" data-dropdown>
+                            <button data-dropdown-button
+                                class="filter__btn border border-[#A8B7BD] rounded-[5px] hover:border-[#30AAED] text-sm py-[10px] px-5 w-full text-left">
+                                Municipality
+                                <i data-dropdown-button
+                                    class="dropbtn ri-arrow-down-s-fill arrow text-lg absolute top-2 right-4 duration-300"></i>
+                            </button>
+                            <div
+                                class="dropdown__content w-full absolute top-8 right-0 z-10 bg-white text-[#3B484C] duration-300 opacity-0 invisible">
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Bhotkhola</a>
+                            </div>
+                        </div>
+                        <div class="dropdown relative" data-dropdown>
+                            <button data-dropdown-button
+                                class="filter__btn border border-[#A8B7BD] rounded-[5px] hover:border-[#30AAED] text-sm py-[10px] px-5 w-full text-left">
+                                Ward no.
+                                <i data-dropdown-button
+                                    class="dropbtn ri-arrow-down-s-fill arrow text-lg absolute top-2 right-4 duration-300"></i>
+                            </button>
+                            <div
+                                class="dropdown__content w-full absolute top-8 right-0 z-10 bg-white text-[#3B484C] duration-300 opacity-0 invisible">
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">1</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">2</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">3</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">4</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">5</a>
+                            </div>
+                        </div>
+                        <div class="dropdown relative" data-dropdown>
+                            <button data-dropdown-button
+                                class="filter__btn border border-[#A8B7BD] rounded-[5px] hover:border-[#30AAED] text-sm py-[10px] px-5 w-full text-left">
+                                Village
+                                <i data-dropdown-button
+                                    class="dropbtn ri-arrow-down-s-fill arrow text-lg absolute top-2 right-4 duration-300"></i>
+                            </button>
+                            <div
+                                class="dropdown__content h-[220px] w-full overflow-y-auto absolute top-8 right-0 z-10 bg-white text-[#3B484C] duration-300 opacity-0 invisible">
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Kimathanka</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Rukuma</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Chepuwa</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Lingam</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">chyamtang</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">chyamtang</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">chyamtang</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">chyamtang</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-between py-4">
+                        <span class="text-[#A8B7BD] text-sm">Selected Filters:</span>
+                        <button class="text-[#30AAED] text-sm pr-2">Clear all filters</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Table button -->
+            <div class="flex justify-start border-b border-gray-200 mt-8 px-4 md:px-14">
+                <button
+                    class="table__btn--active text-sm h-10 w-[100px] border-[#56BFF5] bg-[#56BFF5] text-white rounded-t-[4px] border  hover:bg-[#0D7ED5] hover:border-[#0D7ED5] active:bg-[#0D7ED5]">Open
+                    (20)</button>
+                <button
+                    class="table__btn text-sm h-10 w-[100px] bg-[#F6F9FA]  rounded-t-[4px] border border-gray-200  hover:bg-[#0D7ED5] active:bg-[#0D7ED5]">Closed
+                    (25)</button>
+                <button
+                    class="table__btn text-sm h-10 w-[100px] bg-[#F6F9FA]  rounded-t-[4px] border border-gray-200  hover:bg-[#0D7ED5] active:bg-[#0D7ED5]">All
+                    (45)</button>
+            </div>
+
+            <!-- Table -->
+            <table class="w-[95%] md:w-[90%] m-auto mt-8">
+                <thead class="bg-[#F6F9FA]">
+                    <tr class="text-[#3B484C] text-left">
+                        <th class="flex items-center gap-2 text-sm font-normal">Grievance Title
+                            <i class="ri-sort-desc"></i>
+                        </th>
+                        <th class="text-sm font-normal">Name</th>
+                        <th class="text-sm font-normal">Reg. Date</th>
+                        <th class="text-sm font-normal">Due date</th>
+                        <th class="flex items-center gap-2 text-sm font-normal">Grievance type
+                            <i class="ri-sort-asc"></i>
+                        </th>
+                        <th class="text-sm font-normal">Location</th>
+                        <th class="text-sm font-normal">Resolution Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr class="border-b border-gray-200 relative">
+                        <td class="text-[#2A3539] leading-4 pb-0">
+                            <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
+                            <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2 pt-1">
+                                <div class="flex items-center gap-1  bg-[#FFE5E6] px-1 rounded-t-sm">
+                                    <i class="ri-arrow-up-circle-line text-[#F75F61] text-sm"></i>
+                                    <span class="text-[11px] text-black">High Priority</span>
+                                </div>
+                                <div class="flex items-center gap-1 bg-[#FFFAC3] px-1 w-[4.5rem] rounded-t-sm">
+                                    <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
+                                    <span class="text-[11px] text-black">Overdue</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-[#2A3539] text-sm mt-1">Prawesh Man<br>
+                            Shrestha</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Aug 01, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">June 10, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Environmental:<br>
+                            Water soure dra..</td>
+                        <td class="text-[#2A3539] text-sm m-1">Gola - 1</td>
+                        <td class="text-[#2A3539] text-xs flex gap-2 mt-3">
+                            <button
+                                class="flex flex-shrink-0 items-center gap-1 border border-[#CD8C12] text-[#CD8C12]  rounded-3xl py-[5px] px-2">
+                                <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 5.5C4.38071 5.5 5.5 4.38071 5.5 3C5.5 1.61929 4.38071 0.5 3 0.5C1.61929 0.5 0.5 1.61929 0.5 3C0.5 4.38071 1.61929 5.5 3 5.5Z"
+                                        fill="#CD8C12" />
+                                </svg>
+                                NOT APPROVED</button>
+                            <div data-dropdown class="dropdown flex items-center relative">
+                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <div
+                                    class="dropdown__content w-32 absolute top-4 right-4 z-10 bg-white text-[#3B484C] text-sm duration-300 opacity-0 invisible">
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                                        <i class="ri-edit-line"></i>Edit</a>
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
+                                            class="ri-delete-bin-6-line"></i>Delete</a>
+                                    <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
+                                            class="ri-check-double-line"></i>Approve</a></li>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b border-gray-200 relative">
+                        <td class="text-[#2A3539] leading-4 pb-0">
+                            <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
+                            <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2 pt-1">
+                                <div class="flex items-center gap-1  bg-[#FFE5E6] px-1 rounded-t-sm">
+                                    <i class="ri-arrow-up-circle-line text-[#F75F61] text-sm"></i>
+                                    <span class="text-[11px] text-black">High Priority</span>
+                                </div>
+                                <div class="flex items-center gap-1 bg-[#FFFAC3] px-1 w-[4.5rem] rounded-t-sm">
+                                    <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
+                                    <span class="text-[11px] text-black">Overdue</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-[#2A3539] text-sm mt-1">Prawesh Man<br>
+                            Shrestha</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Aug 01, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">June 10, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Environmental:<br>
+                            Water soure dra..</td>
+                        <td class="text-[#2A3539] text-sm m-1">Gola - 1</td>
+                        <td class="text-[#2A3539] text-xs flex gap-2 mt-3">
+                            <button
+                                class="flex flex-shrink-0 items-center gap-1 border border-[#CD8C12] text-[#CD8C12]  rounded-3xl py-[5px] px-2">
+                                <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 5.5C4.38071 5.5 5.5 4.38071 5.5 3C5.5 1.61929 4.38071 0.5 3 0.5C1.61929 0.5 0.5 1.61929 0.5 3C0.5 4.38071 1.61929 5.5 3 5.5Z"
+                                        fill="#CD8C12" />
+                                </svg>
+                                NOT APPROVED</button>
+                            <div data-dropdown class="dropdown flex items-center relative">
+                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <div
+                                    class="dropdown__content w-32 absolute top-4 right-4 z-10 bg-white text-[#3B484C] text-sm duration-300 opacity-0 invisible">
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                                        <i class="ri-edit-line"></i>Edit</a>
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
+                                            class="ri-delete-bin-6-line"></i>Delete</a>
+                                    <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
+                                            class="ri-check-double-line"></i>Approve</a></li>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b border-gray-200 relative">
+                        <td class="text-[#2A3539] leading-4 pb-0">
+                            <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
+                            <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2 pt-1">
+                                <div class="flex items-center gap-1  bg-[#FFE5E6] px-1 rounded-t-sm">
+                                    <i class="ri-arrow-up-circle-line text-[#F75F61] text-sm"></i>
+                                    <span class="text-[11px] text-black">High Priority</span>
+                                </div>
+                                <div class="flex items-center gap-1 bg-[#FFFAC3] px-1 w-[4.5rem] rounded-t-sm">
+                                    <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
+                                    <span class="text-[11px] text-black">Overdue</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-[#2A3539] text-sm mt-1">Prawesh Man<br>
+                            Shrestha</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Aug 01, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">June 10, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Environmental:<br>
+                            Water soure dra..</td>
+                        <td class="text-[#2A3539] text-sm m-1">Gola - 1</td>
+                        <td class="text-[#2A3539] text-xs flex gap-2 mt-3">
+                            <button
+                                class="flex flex-shrink-0 items-center gap-1 border border-[#07BAB7] text-[#07BAB7] text-xs rounded-3xl py-[5px] px-[21px]">
+                                <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 5.5C4.38071 5.5 5.5 4.38071 5.5 3C5.5 1.61929 4.38071 0.5 3 0.5C1.61929 0.5 0.5 1.61929 0.5 3C0.5 4.38071 1.61929 5.5 3 5.5Z"
+                                        fill="#07BAB7" />
+                                </svg>
+                                APPROVED</button>
+                            <div data-dropdown class="dropdown flex items-center relative">
+                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <div
+                                    class="dropdown__content w-32 absolute top-4 right-4 z-10 bg-white text-[#3B484C] text-sm duration-300 opacity-0 invisible">
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                                        <i class="ri-edit-line"></i>Edit</a>
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
+                                            class="ri-delete-bin-6-line"></i>Delete</a>
+                                    <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
+                                            class="ri-check-double-line"></i>Approve</a></li>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b border-gray-200 relative">
+                        <td class="text-[#2A3539] leading-4 pb-0">
+                            <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
+                            <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
+                            <div class="sm:pl-[88px] pt-2 relative">
+                                <div class="flex items-center gap-1 bg-[#FFFAC3] ml-[6px] px-1 w-[4.5rem] rounded-t-sm">
+                                    <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
+                                    <span class="text-[11px] text-black">Overdue</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-[#2A3539] text-sm mt-1">Prawesh Man<br>
+                            Shrestha</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Aug 01, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">June 10, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Environmental:<br>
+                            Water soure dra..</td>
+                        <td class="text-[#2A3539] text-sm m-1">Gola - 1</td>
+                        <td class="text-[#2A3539] text-xs flex gap-2 mt-3">
+                            <button
+                                class="flex flex-shrink-0 items-center gap-1 border border-[#CD8C12] text-[#CD8C12] text-xs rounded-3xl py-[5px] px-2">
+                                <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 5.5C4.38071 5.5 5.5 4.38071 5.5 3C5.5 1.61929 4.38071 0.5 3 0.5C1.61929 0.5 0.5 1.61929 0.5 3C0.5 4.38071 1.61929 5.5 3 5.5Z"
+                                        fill="#CD8C12" />
+                                </svg>
+                                NOT APPROVED</button>
+                            <div data-dropdown class="dropdown flex items-center relative">
+                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <div
+                                    class="dropdown__content w-32 absolute top-4 right-4 z-10 bg-white text-[#3B484C] text-sm duration-300 opacity-0 invisible">
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                                        <i class="ri-edit-line"></i>Edit</a>
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
+                                            class="ri-delete-bin-6-line"></i>Delete</a>
+                                    <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
+                                            class="ri-check-double-line"></i>Approve</a></li>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b border-gray-200 relative">
+                        <td class="text-[#2A3539] leading-4 pb-0">
+                            <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
+                            <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
+                            <div class="sm:pl-[88px] pt-2 relative">
+                                <div class="flex items-center gap-1 bg-[#FFFAC3] ml-[6px] px-1 w-[4.5rem] rounded-t-sm">
+                                    <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
+                                    <span class="text-[11px] text-black">Overdue</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-[#2A3539] text-sm mt-1">Prawesh Man<br>
+                            Shrestha</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Aug 01, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">June 10, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Environmental:<br>
+                            Water soure dra..</td>
+                        <td class="text-[#2A3539] text-sm m-1">Gola - 1</td>
+                        <td class="text-[#2A3539] text-xs flex gap-2 mt-3">
+                            <button
+                                class="flex flex-shrink-0 items-center gap-1 border border-[#CD8C12] text-[#CD8C12] text-xs rounded-3xl py-[5px] px-2">
+                                <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 5.5C4.38071 5.5 5.5 4.38071 5.5 3C5.5 1.61929 4.38071 0.5 3 0.5C1.61929 0.5 0.5 1.61929 0.5 3C0.5 4.38071 1.61929 5.5 3 5.5Z"
+                                        fill="#CD8C12" />
+                                </svg>
+                                NOT APPROVED</button>
+                            <div data-dropdown class="dropdown flex items-center relative">
+                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <div
+                                    class="dropdown__content w-32 absolute top-4 right-4 z-10 bg-white text-[#3B484C] text-sm duration-300 opacity-0 invisible">
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                                        <i class="ri-edit-line"></i>Edit</a>
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
+                                            class="ri-delete-bin-6-line"></i>Delete</a>
+                                    <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
+                                            class="ri-check-double-line"></i>Approve</a></li>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b border-gray-200 relative">
+                        <td class="text-[#2A3539] leading-4 pb-0">
+                            <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
+                            <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
+                            <div class="sm:pl-[88px] pt-2 relative">
+                                <div class="flex items-center gap-1 bg-[#FFFAC3] ml-[6px] px-1 w-[4.5rem] rounded-t-sm">
+                                    <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
+                                    <span class="text-[11px] text-black">Overdue</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-[#2A3539] text-sm mt-1">Prawesh Man<br>
+                            Shrestha</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Aug 01, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">June 10, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Environmental:<br>
+                            Water soure dra..</td>
+                        <td class="text-[#2A3539] text-sm m-1">Gola - 1</td>
+                        <td class="text-[#2A3539] text-xs flex gap-2 mt-3">
+                            <button
+                                class="flex flex-shrink-0 items-center gap-1 border border-[#07BAB7] text-[#07BAB7] text-xs rounded-3xl py-[5px] px-[21px]">
+                                <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 5.5C4.38071 5.5 5.5 4.38071 5.5 3C5.5 1.61929 4.38071 0.5 3 0.5C1.61929 0.5 0.5 1.61929 0.5 3C0.5 4.38071 1.61929 5.5 3 5.5Z"
+                                        fill="#07BAB7" />
+                                </svg>
+                                APPROVED</button>
+                            <div data-dropdown class="dropdown flex items-center relative">
+                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <div
+                                    class="dropdown__content w-32 absolute top-4 right-4 z-10 bg-white text-[#3B484C] text-sm duration-300 opacity-0 invisible">
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                                        <i class="ri-edit-line"></i>Edit</a>
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
+                                            class="ri-delete-bin-6-line"></i>Delete</a>
+                                    <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
+                                            class="ri-check-double-line"></i>Approve</a></li>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b border-gray-200 relative">
+                        <td class="text-[#2A3539] leading-4 pb-0">
+                            <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
+                            <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
+                            <div class="sm:pl-[88px] pt-2 relative">
+                                <div class="flex items-center gap-1 bg-[#FFFAC3] ml-[6px] px-1 w-[4.5rem] rounded-t-sm">
+                                    <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
+                                    <span class="text-[11px] text-black">Overdue</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-[#2A3539] text-sm mt-1">Prawesh Man<br>
+                            Shrestha</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Aug 01, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">June 10, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Environmental:<br>
+                            Water soure dra..</td>
+                        <td class="text-[#2A3539] text-sm m-1">Gola - 1</td>
+                        <td class="text-[#2A3539] text-xs flex gap-2 mt-3">
+                            <button
+                                class="flex flex-shrink-0 items-center gap-1 border border-[#07BAB7] text-[#07BAB7] text-xs rounded-3xl py-[5px] px-[21px]">
+                                <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 5.5C4.38071 5.5 5.5 4.38071 5.5 3C5.5 1.61929 4.38071 0.5 3 0.5C1.61929 0.5 0.5 1.61929 0.5 3C0.5 4.38071 1.61929 5.5 3 5.5Z"
+                                        fill="#07BAB7" />
+                                </svg>
+                                APPROVED</button>
+                            <div data-dropdown class="dropdown flex items-center relative">
+                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <div
+                                    class="dropdown__content w-32 absolute top-4 right-4 z-10 bg-white text-[#3B484C] text-sm duration-300 opacity-0 invisible">
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                                        <i class="ri-edit-line"></i>Edit</a>
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
+                                            class="ri-delete-bin-6-line"></i>Delete</a>
+                                    <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
+                                            class="ri-check-double-line"></i>Approve</a></li>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b border-gray-200 relative">
+                        <td class="text-[#2A3539] leading-4 pb-0">
+                            <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
+                            <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
+                            <div class="sm:pl-[88px] pt-2 relative">
+                                <div class="flex items-center gap-1 bg-[#FFFAC3] ml-[6px] px-1 w-[4.5rem] rounded-t-sm">
+                                    <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
+                                    <span class="text-[11px] text-black">Overdue</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-[#2A3539] text-sm mt-1">Prawesh Man<br>
+                            Shrestha</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Aug 01, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">June 10, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Environmental:<br>
+                            Water soure dra..</td>
+                        <td class="text-[#2A3539] text-sm m-1">Gola - 1</td>
+                        <td class="text-[#2A3539] text-xs flex gap-2 mt-3">
+                            <button
+                                class="flex flex-shrink-0 items-center gap-1 border border-[#07BAB7] text-[#07BAB7] text-xs rounded-3xl py-[5px] px-[21px]">
+                                <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 5.5C4.38071 5.5 5.5 4.38071 5.5 3C5.5 1.61929 4.38071 0.5 3 0.5C1.61929 0.5 0.5 1.61929 0.5 3C0.5 4.38071 1.61929 5.5 3 5.5Z"
+                                        fill="#07BAB7" />
+                                </svg>
+                                APPROVED</button>
+                            <div data-dropdown class="dropdown flex items-center relative">
+                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <div
+                                    class="dropdown__content w-32 absolute top-4 right-4 z-10 bg-white text-[#3B484C] text-sm duration-300 opacity-0 invisible">
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                                        <i class="ri-edit-line"></i>Edit</a>
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
+                                            class="ri-delete-bin-6-line"></i>Delete</a>
+                                    <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
+                                            class="ri-check-double-line"></i>Approve</a></li>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b border-gray-200 relative">
+                        <td class="text-[#2A3539] leading-4 pb-0">
+                            <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
+                            <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
+                            <div class="sm:pl-[88px] pt-2 relative">
+                                <div class="flex items-center gap-1 bg-[#FFFAC3] ml-[6px] px-1 w-[4.5rem] rounded-t-sm">
+                                    <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
+                                    <span class="text-[11px] text-black">Overdue</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-[#2A3539] text-sm mt-1">Prawesh Man<br>
+                            Shrestha</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Aug 01, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">June 10, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Environmental:<br>
+                            Water soure dra..</td>
+                        <td class="text-[#2A3539] text-sm m-1">Gola - 1</td>
+                        <td class="text-[#2A3539] text-xs flex gap-2 mt-3">
+                            <button
+                                class="flex flex-shrink-0 items-center gap-1 border border-[#07BAB7] text-[#07BAB7] text-xs rounded-3xl py-[5px] px-[21px]">
+                                <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 5.5C4.38071 5.5 5.5 4.38071 5.5 3C5.5 1.61929 4.38071 0.5 3 0.5C1.61929 0.5 0.5 1.61929 0.5 3C0.5 4.38071 1.61929 5.5 3 5.5Z"
+                                        fill="#07BAB7" />
+                                </svg>
+                                APPROVED</button>
+                            <div data-dropdown class="dropdown flex items-center relative">
+                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <div
+                                    class="dropdown__content w-32 absolute top-4 right-4 z-10 bg-white text-[#3B484C] text-sm duration-300 opacity-0 invisible">
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                                        <i class="ri-edit-line"></i>Edit</a>
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
+                                            class="ri-delete-bin-6-line"></i>Delete</a>
+                                    <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
+                                            class="ri-check-double-line"></i>Approve</a></li>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b border-gray-200 relative">
+                        <td class="text-[#2A3539] leading-4 pb-0">
+                            <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
+                            <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
+                            <div class="sm:pl-[88px] pt-2 relative">
+                                <div class="flex items-center gap-1 bg-[#FFFAC3] ml-[6px] px-1 w-[4.5rem] rounded-t-sm">
+                                    <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
+                                    <span class="text-[11px] text-black">Overdue</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-[#2A3539] text-sm mt-1">Prawesh Man<br>
+                            Shrestha</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Aug 01, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">June 10, 2020</td>
+                        <td class="text-[#2A3539] text-sm mt-1">Environmental:<br>
+                            Water soure dra..</td>
+                        <td class="text-[#2A3539] text-sm m-1">Gola - 1</td>
+                        <td class="text-[#2A3539] text-xs flex gap-2 mt-3">
+                            <button
+                                class="flex flex-shrink-0 items-center gap-1 border border-[#07BAB7] text-[#07BAB7] text-xs rounded-3xl py-[5px] px-[21px]">
+                                <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 5.5C4.38071 5.5 5.5 4.38071 5.5 3C5.5 1.61929 4.38071 0.5 3 0.5C1.61929 0.5 0.5 1.61929 0.5 3C0.5 4.38071 1.61929 5.5 3 5.5Z"
+                                        fill="#07BAB7" />
+                                </svg>
+                                APPROVED</button>
+                            <div data-dropdown class="dropdown flex items-center relative">
+                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <div
+                                    class="dropdown__content w-32 absolute top-4 right-4 z-10 bg-white text-[#3B484C] text-sm duration-300 opacity-0 invisible">
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                                        <i class="ri-edit-line"></i>Edit</a>
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
+                                            class="ri-delete-bin-6-line"></i>Delete</a>
+                                    <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
+                                            class="ri-check-double-line"></i>Approve</a></li>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+            <!-- Pagination -->
+            <div class="flex flex-col sm:flex-row items-center sm:justify-between gap-4 my-7 sm:my-10 px-4 sm:px-14">
+                <p class="text-[#A8B7BD] text-sm">Showing 1-7 of 7 entries</p>
+                <ul class="flex items-center gap-[13px] text-[#87979D] text-sm">
+                    <!-- <li><a class="text-[#87979D]" href="#">Previous</a></li> -->
+                    <li><button disabled class="text-[#A8B7BD]">Previous</button></li>
+                    <li><a class="py-[2px] px-[10px] rounded-full bg-[#30AAED] text-white" href="#">1</a></li>
+                    <li><a class="py-[2px] px-[10px] rounded-full hover:text-[#30AAED]" href="#">2</a></li>
+                    <li><a class="py-[2px] px-[10px] rounded-full hover:text-[#30AAED]" href="#">3</a></li>
+                    <li><a class="py-[2px] px-[10px] rounded-full hover:text-[#30AAED]" href="#">4</a></li>
+                    <li><a class="py-[2px] px-[10px] rounded-full hover:text-[#30AAED] hidden sm:block" href="#">5</a>
+                    </li>
+                    <li><a class="py-[2px] px-[10px] rounded-full hover:text-[#30AAED] hidden sm:block" href="#">6</a>
+                    </li>
+                    <li><button class="hover:text-[#30AAED]" href="#">Next</button></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
