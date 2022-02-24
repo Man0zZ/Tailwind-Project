@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image" href="/img/logo.svg">
+    <link rel="shortcut icon" type="image" href="https://res.cloudinary.com/dr6dkvgz1/image/upload/v1645706554/UAHEL/logo_x7nslx.svg">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./components/fonts.css">
+    <!-- <link rel="stylesheet" href="./components/fonts.css"> -->
     <link rel="stylesheet" href="./components/buttons.css">
     <link rel="stylesheet" href="./components/table.css">
     <link rel="stylesheet" href="./components/animation.css">
     <link rel="stylesheet" href="./css/app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Mukta:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script defer src="./js/script.js"></script>
+
 
     <title>UAHEL Grievances System</title>
 </head>
@@ -56,7 +61,7 @@
                 <a class="flex gap-2" href="#"><i class="ri-file-chart-line"></i>Create report</a>
             </li>
             <li
-                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-neutral-90 hover:text-[#07BAB7] duration-300">  
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-neutral-90 hover:text-[#07BAB7] duration-300">
                 <a class="flex gap-2" href="#"><i class="ri-file-download-line"></i>Export data</a>
             </li>
             <li
@@ -103,11 +108,11 @@
                     <a class="flex gap-2" href="#"><i class="ri-feedback-line"></i>Information List</a>
                 </li>
                 <li
-                    class="mx-2 py-3 px-8 flex gap-2 items-center text-neutral-90 rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">  
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-neutral-90 rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
                     <a class="flex gap-2" href="#"><i class="ri-file-add-line"></i>Add new information</a>
                 </li>
                 <li
-                    class="mx-2 py-3 px-8 flex gap-2 items-center text-neutral-90 rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">                 
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-neutral-90 rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
                     <a class="flex gap-2" href="#"><i class="ri-file-chart-line"></i>Create report</a>
                 </li>
                 <li
@@ -157,8 +162,9 @@
                     <i class="ri-notification-3-line text-[#87979D] hover:text-[#30AAED]"></i>
                     <div data-dropdown class="dropdown flex items-center gap-1 relative">
                         <button data-dropdown-button
-                            class="dropbtn text-[#87979D] hover:text-[#30AAED] flex justify-center items-center gap-1 mt-1"><i data-dropdown-button
-                                class="dropbtn ri-user-line mb-1"></i>Prawesh<i data-dropdown-button
+                            class="dropbtn text-[#87979D] hover:text-[#30AAED] flex justify-center items-center gap-1 mt-1"><i
+                                data-dropdown-button class="dropbtn ri-user-line mb-1"></i>Prawesh<i
+                                data-dropdown-button
                                 class="dropbtn ri-arrow-down-s-fill arrow duration-300"></i></button>
                         <div
                             class="dropdown__content w-36 text-sm text-neutral-100 absolute top-12 right-0 z-10 bg-white duration-300 opacity-0 invisible">
@@ -191,8 +197,9 @@
                             <a class="flex gap-2" href="#"><i class="ri-eye-line"></i>नेपालीमा
                                 हेर्नुहोस</a>
                         </li>
-                        <li class="py-2 px-3 flex items-center gap-2 hover:bg-[#F2FBFF]"><a class="flex gap-2" href="#"><i class="ri-logout-box-r-line"></i>Logout</a></li>
-                                
+                        <li class="py-2 px-3 flex items-center gap-2 hover:bg-[#F2FBFF]"><a class="flex gap-2"
+                                href="#"><i class="ri-logout-box-r-line"></i>Logout</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -237,9 +244,12 @@
                             </button>
                             <div
                                 class="dropdown__content w-full absolute top-8 right-0 z-10 bg-white text-[#3B484C] duration-300 opacity-0 invisible">
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">In Progress</a>
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Resolved</a>
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Unresolved</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">In Progress</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">Resolved</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">Unresolved</a>
                             </div>
 
                         </div>
@@ -254,17 +264,23 @@
                                 class="dropdown__content w-full absolute top-8 right-0 z-10 bg-white text-[#3B484C] duration-300 opacity-0 invisible">
                                 <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
                                     href="#">Environmental</a>
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">GBV</a>
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Labour</a>
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Social</a>
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Technical</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">GBV</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">Labour</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">Social</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">Technical</a>
                             </div>
                         </div>
                         <div class="dropdown relative" data-dropdown>
-                            <input data-dropdown-button placeholder="Due date" readonly type="date" class=" border border-[#A8B7BD] outline-none focus:ring-[#30AAED] rounded-[5px] hover:border-[#30AAED] text-sm py-[10px] px-5 w-full text-left">
+                            <input data-dropdown-button placeholder="Due date" readonly type="date"
+                                class=" border border-[#A8B7BD] outline-none focus:ring-[#30AAED] rounded-[5px] hover:border-[#30AAED] text-sm py-[10px] px-5 w-full text-left">
                         </div>
                         <div class="dropdown relative" data-dropdown>
-                            <input data-dropdown-button placeholder="Reg. date" readonly type="date" class=" border border-[#A8B7BD] outline-none focus:ring-[#30AAED] rounded-[5px] hover:border-[#30AAED] text-sm py-[10px] px-5 w-full text-left">
+                            <input data-dropdown-button placeholder="Reg. date" readonly type="date"
+                                class=" border border-[#A8B7BD] outline-none focus:ring-[#30AAED] rounded-[5px] hover:border-[#30AAED] text-sm py-[10px] px-5 w-full text-left">
                         </div>
                         <div class="dropdown relative" data-dropdown>
                             <button data-dropdown-button
@@ -275,7 +291,8 @@
                             </button>
                             <div
                                 class="dropdown__content w-full absolute top-8 right-0 z-10 bg-white text-[#3B484C] duration-300 opacity-0 invisible">
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">High
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">High
                                     Priority</a>
                             </div>
                         </div>
@@ -288,7 +305,8 @@
                             </button>
                             <div
                                 class="dropdown__content w-full absolute top-8 right-0 z-10 bg-white text-[#3B484C] duration-300 opacity-0 invisible">
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Bhotkhola</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">Bhotkhola</a>
                             </div>
                         </div>
                         <div class="dropdown relative" data-dropdown>
@@ -300,11 +318,16 @@
                             </button>
                             <div
                                 class="dropdown__content w-full absolute top-8 right-0 z-10 bg-white text-[#3B484C] duration-300 opacity-0 invisible">
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">1</a>
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">2</a>
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">3</a>
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">4</a>
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">5</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">1</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">2</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">3</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">4</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">5</a>
                             </div>
                         </div>
                         <div class="dropdown relative" data-dropdown>
@@ -316,14 +339,22 @@
                             </button>
                             <div
                                 class="dropdown__content h-[220px] w-full overflow-y-auto absolute top-8 right-0 z-10 bg-white text-[#3B484C] duration-300 opacity-0 invisible">
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Kimathanka</a>
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Rukuma</a>
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Chepuwa</a>
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">Lingam</a>
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">chyamtang</a>
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">chyamtang</a>
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">chyamtang</a>
-                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white" href="#">chyamtang</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">Kimathanka</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">Rukuma</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">Chepuwa</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">Lingam</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">chyamtang</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">chyamtang</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">chyamtang</a>
+                                <a class="py-[10px] px-5 w-full flex gap-2 hover:bg-[#0DA096] hover:text-white"
+                                    href="#">chyamtang</a>
                             </div>
                         </div>
                     </div>
@@ -399,7 +430,8 @@
                                 </svg>
                                 NOT APPROVED</button>
                             <div data-dropdown class="dropdown flex items-center relative">
-                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <button data-dropdown-button><i data-dropdown-button
+                                        class="ri-more-2-fill text-sm"></i></button>
                                 <div
                                     class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
                                     <a href="#"
@@ -448,7 +480,8 @@
                                 </svg>
                                 NOT APPROVED</button>
                             <div data-dropdown class="dropdown flex items-center relative">
-                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <button data-dropdown-button><i data-dropdown-button
+                                        class="ri-more-2-fill text-sm"></i></button>
                                 <div
                                     class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
                                     <a href="#"
@@ -497,7 +530,8 @@
                                 </svg>
                                 APPROVED</button>
                             <div data-dropdown class="dropdown flex items-center relative">
-                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <button data-dropdown-button><i data-dropdown-button
+                                        class="ri-more-2-fill text-sm"></i></button>
                                 <div
                                     class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
                                     <a href="#"
@@ -542,7 +576,8 @@
                                 </svg>
                                 NOT APPROVED</button>
                             <div data-dropdown class="dropdown flex items-center relative">
-                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <button data-dropdown-button><i data-dropdown-button
+                                        class="ri-more-2-fill text-sm"></i></button>
                                 <div
                                     class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
                                     <a href="#"
@@ -587,7 +622,8 @@
                                 </svg>
                                 NOT APPROVED</button>
                             <div data-dropdown class="dropdown flex items-center relative">
-                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <button data-dropdown-button><i data-dropdown-button
+                                        class="ri-more-2-fill text-sm"></i></button>
                                 <div
                                     class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
                                     <a href="#"
@@ -632,7 +668,8 @@
                                 </svg>
                                 APPROVED</button>
                             <div data-dropdown class="dropdown flex items-center relative">
-                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <button data-dropdown-button><i data-dropdown-button
+                                        class="ri-more-2-fill text-sm"></i></button>
                                 <div
                                     class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
                                     <a href="#"
@@ -677,7 +714,8 @@
                                 </svg>
                                 APPROVED</button>
                             <div data-dropdown class="dropdown flex items-center relative">
-                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <button data-dropdown-button><i data-dropdown-button
+                                        class="ri-more-2-fill text-sm"></i></button>
                                 <div
                                     class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
                                     <a href="#"
@@ -722,7 +760,8 @@
                                 </svg>
                                 APPROVED</button>
                             <div data-dropdown class="dropdown flex items-center relative">
-                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <button data-dropdown-button><i data-dropdown-button
+                                        class="ri-more-2-fill text-sm"></i></button>
                                 <div
                                     class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
                                     <a href="#"
@@ -767,7 +806,8 @@
                                 </svg>
                                 APPROVED</button>
                             <div data-dropdown class="dropdown flex items-center relative">
-                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <button data-dropdown-button><i data-dropdown-button
+                                        class="ri-more-2-fill text-sm"></i></button>
                                 <div
                                     class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
                                     <a href="#"
@@ -812,7 +852,8 @@
                                 </svg>
                                 APPROVED</button>
                             <div data-dropdown class="dropdown flex items-center relative">
-                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <button data-dropdown-button><i data-dropdown-button
+                                        class="ri-more-2-fill text-sm"></i></button>
                                 <div
                                     class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
                                     <a href="#"
