@@ -78,6 +78,7 @@ filterBtn.addEventListener('click', () => {
   }
 })
 
-
+// Date picker
+flatpickr("input[type=date]", {});
 
 

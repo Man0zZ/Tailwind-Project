@@ -1,7 +1,7 @@
 aside {
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
 }
-input[type="text"] {
+.search input[type="text"] {
   padding-left: 40px;
 }
 input:focus {
@@ -9,6 +9,9 @@ input:focus {
   box-sizing: border-box;
   filter: drop-shadow(0px 0px 4px #30aaed);
   border-radius: 5px;
+}
+.filter__content input::placeholder {
+  padding-left: 0px;
 }
 ::-webkit-scrollbar {
   width: 12px;

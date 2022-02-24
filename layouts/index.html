@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image" href="/img/logo.svg">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./components/fonts.css">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="./components/table.css">
     <link rel="stylesheet" href="./components/animation.css">
     <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <script defer src="./js/script.js"></script>
 
     <title>UAHEL Grievances System</title>
@@ -26,59 +28,48 @@
         </div>
         <ul class="nav__list">
             <li
-                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
-                <i class="ri-dashboard-line"></i>
-                <a href="index.html">Dashboard</a>
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-neutral-90 hover:text-[#07BAB7] duration-300">
+                <a class="flex gap-2" href="index.html"><i class="ri-dashboard-line"></i>Dashboard</a>
             </li>
             <li
-                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
-                <i class="ri-file-user-line"></i>
-                <a href="#">Public enquires</a>
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-neutral-90 hover:text-[#07BAB7] duration-300">
+                <a class="flex gap-2" href="#"><i class="ri-file-user-line"></i>Public enquires</a>
             </li>
             <li
-                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
-                <i class="ri-feedback-line"></i>
-                <a href="#">Grievances List</a>
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-neutral-90 hover:text-[#07BAB7] duration-300">
+                <a class="flex gap-2" href="#"><i class="ri-feedback-line"></i>Grievances List</a>
             </li>
             <li
-                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
-                <i class="ri-file-add-line"></i>
-                <a href="#">Add new grievance</a>
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-neutral-90 hover:text-[#07BAB7] duration-300">
+                <a class="flex gap-2" href="#"><i class="ri-file-add-line"></i>Add new grievance</a>
             </li>
             <li
-                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
-                <i class="ri-feedback-line"></i>
-                <a href="#">Information List</a>
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-neutral-90 hover:text-[#07BAB7] duration-300">
+                <a class="flex gap-2" href="#"><i class="ri-feedback-line"></i>Information List</a>
             </li>
             <li
-                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
-                <i class="ri-file-add-line"></i>
-                <a href="#">Add new information</a>
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-neutral-90 hover:text-[#07BAB7] duration-300">
+                <a class="flex gap-2" href="#"><i class="ri-file-add-line"></i>Add new information</a>
             </li>
             <li
-                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
-                <i class="ri-file-chart-line"></i>
-                <a href="#">Create report</a>
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-neutral-90 hover:text-[#07BAB7] duration-300">
+                <a class="flex gap-2" href="#"><i class="ri-file-chart-line"></i>Create report</a>
             </li>
             <li
-                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
-                <i class="ri-file-download-line"></i>
-                <a href="#">Export data</a>
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-neutral-90 hover:text-[#07BAB7] duration-300">  
+                <a class="flex gap-2" href="#"><i class="ri-file-download-line"></i>Export data</a>
             </li>
             <li
-                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
-                <i class="ri-parent-line"></i>
-                <a href="#">Manage users</a>
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-neutral-90 hover:text-[#07BAB7] duration-300">
+                <a class="flex gap-2" href="#"><i class="ri-parent-line"></i>Manage users</a>
             </li>
             <li
-                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
-                <i class="ri-settings-3-line"></i>
-                <a href="#">Settings</a>
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-neutral-90 hover:text-[#07BAB7] duration-300">
+                <a class="flex gap-2" href="#"><i class="ri-settings-3-line"></i>Settings</a>
             </li>
             <li
-                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-gray-700 hover:text-[#07BAB7] duration-300">
-                <i class="ri-logout-box-r-line"></i>
-                <a href="#">Logout</a>
+                class="flex gap-4 items-center opacity-0 p-[6px] text-2xl tracking-wider text-neutral-90 hover:text-[#07BAB7] duration-300">
+                <a class="flex gap-2" href="#"><i class="ri-logout-box-r-line"></i>Logout</a>
             </li>
         </ul>
     </div>
@@ -90,63 +81,52 @@
             <p class="text-[#07BAB7] text-[0.8rem] mb-20">Grievances System</p>
         </div>
         <nav class="overflow-y-auto h-[75vh]">
-            <ul class="border-b-2 pb-3">
+            <ul class="border-b-2 border-neutral-40 pb-3">
                 <li
-                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
-                    <i class="ri-dashboard-line"></i>
-                    <a href="index.html">Dashboard</a>
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-neutral-90 rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
+                    <a class="flex gap-2" href="index.html"><i class="ri-dashboard-line"></i>Dashboard</a>
                 </li>
                 <li
                     class="mx-2 py-3 px-8 flex gap-2 items-center rounded-md bg-[#07BAB7] text-white hover:bg-[#0DA096] active:bg-[#0DA096] active:shadow-none">
-                    <i class="ri-file-user-line"></i>
-                    <a href="#">Public enquires</a>
+                    <a class="flex gap-2" href="#"><i class="ri-file-user-line"></i>Public enquires</a>
                 </li>
                 <li
-                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
-                    <i class="ri-feedback-line"></i>
-                    <a href="#">Grievances List</a>
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-neutral-90 rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
+                    <a class="flex gap-2" href="#"><i class="ri-feedback-line"></i>Grievances List</a>
                 </li>
                 <li
-                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
-                    <i class="ri-file-add-line"></i>
-                    <a href="#">Add new grievance</a>
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-neutral-90 rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
+                    <a class="flex gap-2" href="#"><i class="ri-file-add-line"></i>Add new grievance</a>
                 </li>
                 <li
-                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
-                    <i class="ri-feedback-line"></i>
-                    <a href="#">Information List</a>
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-neutral-90 rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
+                    <a class="flex gap-2" href="#"><i class="ri-feedback-line"></i>Information List</a>
                 </li>
                 <li
-                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
-                    <i class="ri-file-add-line"></i>
-                    <a href="#">Add new information</a>
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-neutral-90 rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">  
+                    <a class="flex gap-2" href="#"><i class="ri-file-add-line"></i>Add new information</a>
                 </li>
                 <li
-                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
-                    <i class="ri-file-chart-line"></i>
-                    <a href="#">Create report</a>
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-neutral-90 rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">                 
+                    <a class="flex gap-2" href="#"><i class="ri-file-chart-line"></i>Create report</a>
                 </li>
                 <li
-                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
-                    <i class="ri-file-download-line"></i>
-                    <a href="#">Export data</a>
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-neutral-90 rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
+                    <a class="flex gap-2" href="#"><i class="ri-file-download-line"></i>Export data</a>
                 </li>
             </ul>
             <ul class="py-3">
                 <li
-                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
-                    <i class="ri-parent-line"></i>
-                    <a href="#">Manage users</a>
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-neutral-90 rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
+                    <a class="flex gap-2" href="#"><i class="ri-parent-line"></i>Manage users</a>
                 </li>
                 <li
-                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
-                    <i class="ri-settings-3-line"></i>
-                    <a href="#">Settings</a>
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-neutral-90 rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
+                    <a class="flex gap-2" href="#"><i class="ri-settings-3-line"></i>Settings</a>
                 </li>
                 <li
-                    class="mx-2 py-3 px-8 flex gap-2 items-center text-[#303B40] rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
-                    <i class="ri-logout-box-r-line"></i>
-                    <a href="#">Logout</a>
+                    class="mx-2 py-3 px-8 flex gap-2 items-center text-neutral-90 rounded-[5px] hover:bg-[#0DA096] hover:text-white active:bg-[#0DA096] active:shadow-none">
+                    <a class="flex gap-2" href="#"><i class="ri-logout-box-r-line"></i>Logout</a>
                 </li>
             </ul>
         </nav>
@@ -155,23 +135,23 @@
     <main class="flex flex-col w-full xl:ml-[260px]">
         <!-- Header -->
         <header
-            class="h-20 border-b-[0.4px] border-gray-200 flex justify-end items-center px-4 md:px-14 lg:px-10 relative">
-            <div class="absolute left-0 pl-[0.8rem] md:pl-[3.3rem] text-[#42a5ff] cursor-pointer xl:hidden z-50">
+            class="h-20 border-b-[0.4px] border-[#cfe3eb] flex justify-end items-center px-4 md:px-14 lg:px-10 relative">
+            <div class="absolute left-0 pl-[0.8rem] md:pl-[3.3rem] cursor-pointer xl:hidden z-50">
                 <div class="burger">
-                    <div class="line1 bg-[#07BAB7] duration-500 m-1 h-1 w-[30px] "></div>
-                    <div class="line2 bg-[#07BAB7] duration-500 m-1 h-1 w-[30px] "></div>
-                    <div class="line3 bg-[#07BAB7] duration-500 m-1 h-1 w-[30px] "></div>
+                    <div class="line1 bg-neutral-80 duration-500 m-1 h-1 w-[30px] "></div>
+                    <div class="line2 bg-neutral-80 duration-500 m-1 h-1 w-[30px] "></div>
+                    <div class="line3 bg-neutral-80 duration-500 m-1 h-1 w-[30px] "></div>
                 </div>
             </div>
 
             <div class="m-auto block xl:hidden pl-7">
-                <h1 class="text-[#07BAB7] text-4xl leading-none font-semibold">UAHEL</h1>
-                <p class="text-[#07BAB7] text-[0.8rem]">Grievances System</p>
+                <h1 class="text-[#07BAB7] text-3xl leading-none font-semibold">UAHEL</h1>
+                <p class="text-[#07BAB7] text-[0.7rem]">Grievances System</p>
             </div>
 
             <div class="hidden md:block">
                 <div class="flex items-center gap-4">
-                    <a class="text-[#30AAED] border-r-2 border-gray-100 pt-1 pr-4 hover:text-[#0D7ED5]"
+                    <a class="text-[#30AAED] border-r-[0.2px] border-[#cfe3eb] pt-1 pr-4 hover:text-[#0D7ED5]"
                         href="#">नेपालीमा
                         हेर्नुहोस</a>
                     <i class="ri-notification-3-line text-[#87979D] hover:text-[#30AAED]"></i>
@@ -181,8 +161,8 @@
                                 class="dropbtn ri-user-line mb-1"></i>Prawesh<i data-dropdown-button
                                 class="dropbtn ri-arrow-down-s-fill arrow duration-300"></i></button>
                         <div
-                            class="dropdown__content w-36 text-sm absolute top-12 right-0 z-10 bg-white text-[#3B484C] duration-300 opacity-0 invisible">
-                            <a class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"
+                            class="dropdown__content w-36 text-sm text-neutral-100 absolute top-12 right-0 z-10 bg-white duration-300 opacity-0 invisible">
+                            <a class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40"
                                 href="#"><i class="ri-edit-line"></i>Edit</a>
                             <a class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]" href="#"><i
                                     class="ri-logout-box-r-line"></i>Logout</a>
@@ -194,25 +174,25 @@
             <!-- For mobile -->
             <div data-dropdown class="dropdown md:hidden block">
                 <button data-dropdown-button class="dropbtn flex"><i data-dropdown-button
-                        class="dropbtn ri-settings-3-line arrow-profile duration-300 text-3xl text-[#2A3539]"></i></button>
+                        class="dropbtn ri-arrow-left-s-line arrow-profile duration-300 text-3xl"></i></button>
                 <div
                     class="profile__content w-40 absolute top-16 right-56 z-20 bg-white text-[#3B484C] duration-300 opacity-0 invisible">
                     <ul>
                         <li
-                            class="py-2 px-3 flex items-center gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                            class="py-2 px-3 flex items-center gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-neutral-40">
                             <i class="dropbtn ri-user-line mb-1"></i><span>Prawesh</span>
                         </li>
                         <li
-                            class="py-2 px-3 flex items-center gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
-                            <i class="ri-edit-line"></i><a href="#">Edit</a>
+                            class="py-2 px-3 flex items-center gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-neutral-40">
+                            <a class="flex gap-2" href="#"><i class="ri-edit-line"></i>Edit</a>
                         </li>
                         <li
-                            class="py-2 px-3 flex items-center gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
-                            <i class="ri-eye-line"></i><a href="#">नेपालीमा
+                            class="py-2 px-3 flex items-center gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-neutral-40">
+                            <a class="flex gap-2" href="#"><i class="ri-eye-line"></i>नेपालीमा
                                 हेर्नुहोस</a>
                         </li>
-                        <li class="py-2 px-3 flex items-center gap-2 hover:bg-[#F2FBFF]"><i
-                                class="ri-logout-box-r-line"></i><a href="#">Logout</a></li>
+                        <li class="py-2 px-3 flex items-center gap-2 hover:bg-[#F2FBFF]"><a class="flex gap-2" href="#"><i class="ri-logout-box-r-line"></i>Logout</a></li>
+                                
                     </ul>
                 </div>
             </div>
@@ -223,7 +203,7 @@
             <div class="flex justify-between flex-wrap md:flex-nowrap md: gap-5 mt-7 px-4 md:px-14">
                 <div class="w-full">
                     <h2 class="mb-4 md:mb-8 font-bold text-2xl tracking-wider text-[#2A3539]">Grievances</h2>
-                    <div class="relative">
+                    <div class="search relative">
                         <i class="ri-search-2-line text-[#87979D] absolute left-5 top-[7px] z-10"></i>
                         <input
                             class="input w-full h-10 py-2 px-12 outline-none rounded-[5px] border border-[#A8B7BD] hover:border-[#30AAED] focus:ring-[#30AAED]"
@@ -281,20 +261,10 @@
                             </div>
                         </div>
                         <div class="dropdown relative" data-dropdown>
-                            <button data-dropdown-button
-                                class="filter__btn border border-[#A8B7BD] rounded-[5px] hover:border-[#30AAED] text-sm py-[10px] px-5 w-full text-left">
-                                Due date
-                                <i
-                                    class="dropbtn ri-arrow-down-s-fill arrow text-lg absolute top-2 right-4 duration-300"></i>
-                            </button>
+                            <input data-dropdown-button placeholder="Due date" readonly type="date" class=" border border-[#A8B7BD] outline-none focus:ring-[#30AAED] rounded-[5px] hover:border-[#30AAED] text-sm py-[10px] px-5 w-full text-left">
                         </div>
                         <div class="dropdown relative" data-dropdown>
-                            <button data-dropdown-button
-                                class="filter__btn border border-[#A8B7BD] rounded-[5px] hover:border-[#30AAED] text-sm py-[10px] px-5 w-full text-left">
-                                Reg. date
-                                <i
-                                    class="dropbtn ri-arrow-down-s-fill arrow text-lg absolute top-2 right-4 duration-300"></i>
-                            </button>
+                            <input data-dropdown-button placeholder="Reg. date" readonly type="date" class=" border border-[#A8B7BD] outline-none focus:ring-[#30AAED] rounded-[5px] hover:border-[#30AAED] text-sm py-[10px] px-5 w-full text-left">
                         </div>
                         <div class="dropdown relative" data-dropdown>
                             <button data-dropdown-button
@@ -365,22 +335,22 @@
             </div>
 
             <!-- Table button -->
-            <div class="flex justify-start border-b border-gray-200 mt-8 px-4 md:px-14">
+            <div class="flex justify-start border-b border-neutral-20 mt-8 px-4 md:px-14">
                 <button
                     class="table__btn--active text-sm h-10 w-[100px] border-[#56BFF5] bg-[#56BFF5] text-white rounded-t-[4px] border  hover:bg-[#0D7ED5] hover:border-[#0D7ED5] active:bg-[#0D7ED5]">Open
                     (20)</button>
                 <button
-                    class="table__btn text-sm h-10 w-[100px] bg-[#F6F9FA]  rounded-t-[4px] border border-gray-200  hover:bg-[#0D7ED5] active:bg-[#0D7ED5]">Closed
+                    class="table__btn text-sm h-10 w-[100px] bg-[#F6F9FA]  rounded-t-[4px] border border-neutral-20  hover:bg-[#0D7ED5] active:bg-[#0D7ED5]">Closed
                     (25)</button>
                 <button
-                    class="table__btn text-sm h-10 w-[100px] bg-[#F6F9FA]  rounded-t-[4px] border border-gray-200  hover:bg-[#0D7ED5] active:bg-[#0D7ED5]">All
+                    class="table__btn text-sm h-10 w-[100px] bg-[#F6F9FA]  rounded-t-[4px] border border-neutral-20  hover:bg-[#0D7ED5] active:bg-[#0D7ED5]">All
                     (45)</button>
             </div>
 
             <!-- Table -->
             <table class="w-[95%] md:w-[90%] m-auto mt-8">
                 <thead class="bg-[#F6F9FA]">
-                    <tr class="text-[#3B484C] text-left text-[15px]">
+                    <tr class="text-neutral-80 text-left text-[15px]">
                         <th class="flex items-center gap-2 font-normal">Grievance Title
                             <i class="ri-sort-desc"></i>
                         </th>
@@ -396,18 +366,67 @@
                 </thead>
 
                 <tbody>
-                    <tr class="border-b border-gray-200 relative text-[15px]">
+                    <tr class="border-b-[0.2px] border-neutral-40 relative text-neutral-100 text-[15px]">
+                        <td class="text-neutral-100 leading-4 pb-0">
+                            <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
+                            <span class="text-neutral-100 text-[11px]">2020-0520-040230-100</span>
+                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2 pt-1">
+                                <div class="flex items-center gap-1  bg-[#FFE5E6] px-1 rounded-t-sm">
+                                    <i class="ri-arrow-up-circle-line text-[#F75F61] text-sm"></i>
+                                    <span class="text-[11px] text-[#000]">High Priority</span>
+                                </div>
+                                <div class="flex items-center gap-1 bg-[#FFFAC3] px-1 w-[4.5rem] rounded-t-sm">
+                                    <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
+                                    <span class="text-[11px] text-[#000]">Overdue</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-neutral-100 mt-1">Prawesh Man<br>
+                            Shrestha</td>
+                        <td class="text-neutral-100 mt-1">Aug 01, 2020</td>
+                        <td class="text-neutral-100 mt-1">June 10, 2020</td>
+                        <td class="text-neutral-100 mt-1">Environmental:<br>
+                            Water soure dra..</td>
+                        <td class="text-neutral-100 m-1">Gola - 1</td>
+                        <td class="text-neutral-100 text-xs flex gap-2 mt-3">
+                            <button
+                                class="flex flex-shrink-0 items-center gap-1 border border-[#CD8C12] text-[#CD8C12] text-xs rounded-3xl py-[5px] px-2">
+                                <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 5.5C4.38071 5.5 5.5 4.38071 5.5 3C5.5 1.61929 4.38071 0.5 3 0.5C1.61929 0.5 0.5 1.61929 0.5 3C0.5 4.38071 1.61929 5.5 3 5.5Z"
+                                        fill="#CD8C12" />
+                                </svg>
+                                NOT APPROVED</button>
+                            <div data-dropdown class="dropdown flex items-center relative">
+                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <div
+                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40">
+                                        <i class="ri-edit-line"></i>Edit</a>
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40"><i
+                                            class="ri-delete-bin-6-line"></i>Delete</a>
+                                    <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
+                                            class="ri-check-double-line"></i>Approve</a></li>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b border-neutral-40 relative text-[15px]">
                         <td class="text-[#2A3539] leading-4 pb-0">
                             <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
                             <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
                             <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2 pt-1">
                                 <div class="flex items-center gap-1  bg-[#FFE5E6] px-1 rounded-t-sm">
                                     <i class="ri-arrow-up-circle-line text-[#F75F61] text-sm"></i>
-                                    <span class="text-[11px] text-black">High Priority</span>
+                                    <span class="text-[11px] text-[#000]">High Priority</span>
                                 </div>
                                 <div class="flex items-center gap-1 bg-[#FFFAC3] px-1 w-[4.5rem] rounded-t-sm">
                                     <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
-                                    <span class="text-[11px] text-black">Overdue</span>
+                                    <span class="text-[11px] text-[#000]">Overdue</span>
                                 </div>
                             </div>
                         </td>
@@ -431,12 +450,12 @@
                             <div data-dropdown class="dropdown flex items-center relative">
                                 <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
                                 <div
-                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-[#3B484C] text-[15px] duration-300 opacity-0 invisible">
+                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
                                     <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40">
                                         <i class="ri-edit-line"></i>Edit</a>
                                     <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40"><i
                                             class="ri-delete-bin-6-line"></i>Delete</a>
                                     <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
                                             class="ri-check-double-line"></i>Approve</a></li>
@@ -445,18 +464,63 @@
                         </td>
                     </tr>
 
-                    <tr class="border-b border-gray-200 relative text-[15px]">
+                    <tr class="border-b border-neutral-40 relative text-[15px]">
                         <td class="text-[#2A3539] leading-4 pb-0">
                             <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
                             <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
                             <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2 pt-1">
                                 <div class="flex items-center gap-1  bg-[#FFE5E6] px-1 rounded-t-sm">
                                     <i class="ri-arrow-up-circle-line text-[#F75F61] text-sm"></i>
-                                    <span class="text-[11px] text-black">High Priority</span>
+                                    <span class="text-[11px] text-[#000]">High Priority</span>
                                 </div>
                                 <div class="flex items-center gap-1 bg-[#FFFAC3] px-1 w-[4.5rem] rounded-t-sm">
                                     <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
-                                    <span class="text-[11px] text-black">Overdue</span>
+                                    <span class="text-[11px] text-[#000]">Overdue</span>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="text-[#2A3539] mt-1">Prawesh Man<br>
+                            Shrestha</td>
+                        <td class="text-[#2A3539] mt-1">Aug 01, 2020</td>
+                        <td class="text-[#2A3539] mt-1">June 10, 2020</td>
+                        <td class="text-[#2A3539] mt-1">Environmental:<br>
+                            Water soure dra..</td>
+                        <td class="text-[#2A3539] m-1">Gola - 1</td>
+                        <td class="text-[#2A3539] text-xs flex gap-2 mt-3">
+                            <button
+                                class="flex flex-shrink-0 items-center gap-1 border border-[#07BAB7] text-[#07BAB7] text-xs rounded-3xl py-[5px] px-[21px]">
+                                <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 5.5C4.38071 5.5 5.5 4.38071 5.5 3C5.5 1.61929 4.38071 0.5 3 0.5C1.61929 0.5 0.5 1.61929 0.5 3C0.5 4.38071 1.61929 5.5 3 5.5Z"
+                                        fill="#07BAB7" />
+                                </svg>
+                                APPROVED</button>
+                            <div data-dropdown class="dropdown flex items-center relative">
+                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
+                                <div
+                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40">
+                                        <i class="ri-edit-line"></i>Edit</a>
+                                    <a href="#"
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40"><i
+                                            class="ri-delete-bin-6-line"></i>Delete</a>
+                                    <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
+                                            class="ri-check-double-line"></i>Approve</a></li>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="border-b border-neutral-40 relative text-[15px]">
+                        <td class="text-[#2A3539] leading-4 pb-0">
+                            <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
+                            <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
+                            <div class="sm:pl-[88px] pt-2 relative">
+                                <div class="flex items-center gap-1 bg-[#FFFAC3] ml-[6px] px-1 w-[4.5rem] rounded-t-sm">
+                                    <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
+                                    <span class="text-[11px] text-[#000]">Overdue</span>
                                 </div>
                             </div>
                         </td>
@@ -480,12 +544,12 @@
                             <div data-dropdown class="dropdown flex items-center relative">
                                 <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
                                 <div
-                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-[#3B484C] text-[15px] duration-300 opacity-0 invisible">
+                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
                                     <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40">
                                         <i class="ri-edit-line"></i>Edit</a>
                                     <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40"><i
                                             class="ri-delete-bin-6-line"></i>Delete</a>
                                     <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
                                             class="ri-check-double-line"></i>Approve</a></li>
@@ -494,63 +558,14 @@
                         </td>
                     </tr>
 
-                    <tr class="border-b border-gray-200 relative text-[15px]">
-                        <td class="text-[#2A3539] leading-4 pb-0">
-                            <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
-                            <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
-                            <div class="flex flex-col sm:flex-row items-start sm:items-center gap-2 pt-1">
-                                <div class="flex items-center gap-1  bg-[#FFE5E6] px-1 rounded-t-sm">
-                                    <i class="ri-arrow-up-circle-line text-[#F75F61] text-sm"></i>
-                                    <span class="text-[11px] text-black">High Priority</span>
-                                </div>
-                                <div class="flex items-center gap-1 bg-[#FFFAC3] px-1 w-[4.5rem] rounded-t-sm">
-                                    <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
-                                    <span class="text-[11px] text-black">Overdue</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td class="text-[#2A3539] mt-1">Prawesh Man<br>
-                            Shrestha</td>
-                        <td class="text-[#2A3539] mt-1">Aug 01, 2020</td>
-                        <td class="text-[#2A3539] mt-1">June 10, 2020</td>
-                        <td class="text-[#2A3539] mt-1">Environmental:<br>
-                            Water soure dra..</td>
-                        <td class="text-[#2A3539] m-1">Gola - 1</td>
-                        <td class="text-[#2A3539] text-xs flex gap-2 mt-3">
-                            <button
-                                class="flex flex-shrink-0 items-center gap-1 border border-[#07BAB7] text-[#07BAB7] text-xs rounded-3xl py-[5px] px-[21px]">
-                                <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M3 5.5C4.38071 5.5 5.5 4.38071 5.5 3C5.5 1.61929 4.38071 0.5 3 0.5C1.61929 0.5 0.5 1.61929 0.5 3C0.5 4.38071 1.61929 5.5 3 5.5Z"
-                                        fill="#07BAB7" />
-                                </svg>
-                                APPROVED</button>
-                            <div data-dropdown class="dropdown flex items-center relative">
-                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
-                                <div
-                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-[#3B484C] text-[15px] duration-300 opacity-0 invisible">
-                                    <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
-                                        <i class="ri-edit-line"></i>Edit</a>
-                                    <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
-                                            class="ri-delete-bin-6-line"></i>Delete</a>
-                                    <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
-                                            class="ri-check-double-line"></i>Approve</a></li>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr class="border-b border-gray-200 relative text-[15px]">
+                    <tr class="border-b border-neutral-40 relative text-[15px]">
                         <td class="text-[#2A3539] leading-4 pb-0">
                             <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
                             <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
                             <div class="sm:pl-[88px] pt-2 relative">
                                 <div class="flex items-center gap-1 bg-[#FFFAC3] ml-[6px] px-1 w-[4.5rem] rounded-t-sm">
                                     <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
-                                    <span class="text-[11px] text-black">Overdue</span>
+                                    <span class="text-[11px] text-[#000]">Overdue</span>
                                 </div>
                             </div>
                         </td>
@@ -574,12 +589,12 @@
                             <div data-dropdown class="dropdown flex items-center relative">
                                 <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
                                 <div
-                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-[#3B484C] text-[15px] duration-300 opacity-0 invisible">
+                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
                                     <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40">
                                         <i class="ri-edit-line"></i>Edit</a>
                                     <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40"><i
                                             class="ri-delete-bin-6-line"></i>Delete</a>
                                     <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
                                             class="ri-check-double-line"></i>Approve</a></li>
@@ -588,59 +603,14 @@
                         </td>
                     </tr>
 
-                    <tr class="border-b border-gray-200 relative text-[15px]">
+                    <tr class="border-b border-neutral-40 relative text-[15px]">
                         <td class="text-[#2A3539] leading-4 pb-0">
                             <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
                             <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
                             <div class="sm:pl-[88px] pt-2 relative">
                                 <div class="flex items-center gap-1 bg-[#FFFAC3] ml-[6px] px-1 w-[4.5rem] rounded-t-sm">
                                     <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
-                                    <span class="text-[11px] text-black">Overdue</span>
-                                </div>
-                            </div>
-                        </td>
-                        <td class="text-[#2A3539] mt-1">Prawesh Man<br>
-                            Shrestha</td>
-                        <td class="text-[#2A3539] mt-1">Aug 01, 2020</td>
-                        <td class="text-[#2A3539] mt-1">June 10, 2020</td>
-                        <td class="text-[#2A3539] mt-1">Environmental:<br>
-                            Water soure dra..</td>
-                        <td class="text-[#2A3539] m-1">Gola - 1</td>
-                        <td class="text-[#2A3539] text-xs flex gap-2 mt-3">
-                            <button
-                                class="flex flex-shrink-0 items-center gap-1 border border-[#CD8C12] text-[#CD8C12] text-xs rounded-3xl py-[5px] px-2">
-                                <svg width="6" height="6" viewBox="0 0 6 6" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M3 5.5C4.38071 5.5 5.5 4.38071 5.5 3C5.5 1.61929 4.38071 0.5 3 0.5C1.61929 0.5 0.5 1.61929 0.5 3C0.5 4.38071 1.61929 5.5 3 5.5Z"
-                                        fill="#CD8C12" />
-                                </svg>
-                                NOT APPROVED</button>
-                            <div data-dropdown class="dropdown flex items-center relative">
-                                <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
-                                <div
-                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-[#3B484C] text-[15px] duration-300 opacity-0 invisible">
-                                    <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
-                                        <i class="ri-edit-line"></i>Edit</a>
-                                    <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
-                                            class="ri-delete-bin-6-line"></i>Delete</a>
-                                    <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
-                                            class="ri-check-double-line"></i>Approve</a></li>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-
-                    <tr class="border-b border-gray-200 relative text-[15px]">
-                        <td class="text-[#2A3539] leading-4 pb-0">
-                            <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
-                            <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
-                            <div class="sm:pl-[88px] pt-2 relative">
-                                <div class="flex items-center gap-1 bg-[#FFFAC3] ml-[6px] px-1 w-[4.5rem] rounded-t-sm">
-                                    <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
-                                    <span class="text-[11px] text-black">Overdue</span>
+                                    <span class="text-[11px] text-[#000]">Overdue</span>
                                 </div>
                             </div>
                         </td>
@@ -664,12 +634,12 @@
                             <div data-dropdown class="dropdown flex items-center relative">
                                 <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
                                 <div
-                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-[#3B484C] text-[15px] duration-300 opacity-0 invisible">
+                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
                                     <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40">
                                         <i class="ri-edit-line"></i>Edit</a>
                                     <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40"><i
                                             class="ri-delete-bin-6-line"></i>Delete</a>
                                     <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
                                             class="ri-check-double-line"></i>Approve</a></li>
@@ -678,14 +648,14 @@
                         </td>
                     </tr>
 
-                    <tr class="border-b border-gray-200 relative text-[15px]">
+                    <tr class="border-b border-neutral-40 relative text-[15px]">
                         <td class="text-[#2A3539] leading-4 pb-0">
                             <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
                             <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
                             <div class="sm:pl-[88px] pt-2 relative">
                                 <div class="flex items-center gap-1 bg-[#FFFAC3] ml-[6px] px-1 w-[4.5rem] rounded-t-sm">
                                     <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
-                                    <span class="text-[11px] text-black">Overdue</span>
+                                    <span class="text-[11px] text-[#000]">Overdue</span>
                                 </div>
                             </div>
                         </td>
@@ -709,12 +679,12 @@
                             <div data-dropdown class="dropdown flex items-center relative">
                                 <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
                                 <div
-                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-[#3B484C] text-[15px] duration-300 opacity-0 invisible">
+                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
                                     <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40">
                                         <i class="ri-edit-line"></i>Edit</a>
                                     <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40"><i
                                             class="ri-delete-bin-6-line"></i>Delete</a>
                                     <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
                                             class="ri-check-double-line"></i>Approve</a></li>
@@ -723,14 +693,14 @@
                         </td>
                     </tr>
 
-                    <tr class="border-b border-gray-200 relative text-[15px]">
+                    <tr class="border-b border-neutral-40 relative text-[15px]">
                         <td class="text-[#2A3539] leading-4 pb-0">
                             <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
                             <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
                             <div class="sm:pl-[88px] pt-2 relative">
                                 <div class="flex items-center gap-1 bg-[#FFFAC3] ml-[6px] px-1 w-[4.5rem] rounded-t-sm">
                                     <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
-                                    <span class="text-[11px] text-black">Overdue</span>
+                                    <span class="text-[11px] text-[#000]">Overdue</span>
                                 </div>
                             </div>
                         </td>
@@ -754,12 +724,12 @@
                             <div data-dropdown class="dropdown flex items-center relative">
                                 <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
                                 <div
-                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-[#3B484C] text-[15px] duration-300 opacity-0 invisible">
+                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
                                     <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40">
                                         <i class="ri-edit-line"></i>Edit</a>
                                     <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40"><i
                                             class="ri-delete-bin-6-line"></i>Delete</a>
                                     <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
                                             class="ri-check-double-line"></i>Approve</a></li>
@@ -768,14 +738,14 @@
                         </td>
                     </tr>
 
-                    <tr class="border-b border-gray-200 relative text-[15px]">
+                    <tr class="border-b border-neutral-40 relative text-[15px]">
                         <td class="text-[#2A3539] leading-4 pb-0">
                             <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
                             <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
                             <div class="sm:pl-[88px] pt-2 relative">
                                 <div class="flex items-center gap-1 bg-[#FFFAC3] ml-[6px] px-1 w-[4.5rem] rounded-t-sm">
                                     <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
-                                    <span class="text-[11px] text-black">Overdue</span>
+                                    <span class="text-[11px] text-[#000]">Overdue</span>
                                 </div>
                             </div>
                         </td>
@@ -799,12 +769,12 @@
                             <div data-dropdown class="dropdown flex items-center relative">
                                 <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
                                 <div
-                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-[#3B484C] text-[15px] duration-300 opacity-0 invisible">
+                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
                                     <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40">
                                         <i class="ri-edit-line"></i>Edit</a>
                                     <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40"><i
                                             class="ri-delete-bin-6-line"></i>Delete</a>
                                     <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
                                             class="ri-check-double-line"></i>Approve</a></li>
@@ -813,14 +783,14 @@
                         </td>
                     </tr>
 
-                    <tr class="border-b border-gray-200 relative text-[15px]">
+                    <tr class="border-b border-neutral-40 relative text-[15px]">
                         <td class="text-[#2A3539] leading-4 pb-0">
                             <h3 class="font-bold tracking-wide text-sm lg:text-[15px]">Water Source drained</h3>
                             <span class="text-[#2A3539] text-[11px]">2020-0520-040230-100</span>
                             <div class="sm:pl-[88px] pt-2 relative">
                                 <div class="flex items-center gap-1 bg-[#FFFAC3] ml-[6px] px-1 w-[4.5rem] rounded-t-sm">
                                     <i class="ri-alarm-line text-[#CD8C12] text-sm"></i>
-                                    <span class="text-[11px] text-black">Overdue</span>
+                                    <span class="text-[11px] text-[#000]">Overdue</span>
                                 </div>
                             </div>
                         </td>
@@ -844,12 +814,12 @@
                             <div data-dropdown class="dropdown flex items-center relative">
                                 <button data-dropdown-button><i data-dropdown-button class="ri-more-2-fill text-sm"></i></button>
                                 <div
-                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-[#3B484C] text-[15px] duration-300 opacity-0 invisible">
+                                    class="dropdown__content w-32 absolute top-4 right-7 z-10 bg-white text-neutral-100 text-[15px] duration-300 opacity-0 invisible">
                                     <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300">
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40">
                                         <i class="ri-edit-line"></i>Edit</a>
                                     <a href="#"
-                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.4px] border-gray-300"><i
+                                        class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF] border-b-[0.2px] border-neutral-40"><i
                                             class="ri-delete-bin-6-line"></i>Delete</a>
                                     <a href="#" class="py-2 px-3 flex gap-2 hover:bg-[#F2FBFF]"><i
                                             class="ri-check-double-line"></i>Approve</a></li>
@@ -880,6 +850,8 @@
             </div>
         </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </body>
 
 </html>
